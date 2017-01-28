@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_vendor_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nikki.project2.vendorpack.EditVendorProfile"
+    android:background="@drawable/tri">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv1"
+                android:padding="2dp"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_vendorname"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/name4"
+                    android:drawableTint="#EC407A"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txemailid1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tname1"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_vendoremailid"
+                    android:hint="Email Id"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/email2"
+                    android:drawableTint="#EC407A"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txmobile1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txpass1"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_vendormobileno"
+                    android:hint="Mobile No"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/smartphone1"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txgender1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txmobile1"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edit_vendorgender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gender"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/gender"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txgender1"
+
+                android:padding="2dp">
+                <EditText
+                    android:id="@+id/edit_vendoraddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/address"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txdob1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txAddress1"
+
+                android:padding="2dp">
+                <EditText
+                    android:id="@+id/edit_vendordateofbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date Of Birth"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/date1"
+                    android:drawableTint="#EC407A"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="220dp"
+                android:id="@+id/edit_btnvendordob"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/cal3"/>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_edit_vendorprofileUpdate"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="Update"
+                android:textColor="#fff"
+                android:background="#EC407A"
+                android:layout_gravity="center"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

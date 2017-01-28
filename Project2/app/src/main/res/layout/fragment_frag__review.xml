@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="customerpack.Frag_Review"
+    android:background="@drawable/tri"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv1"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/givereview"
+                android:hint="Give your review"
+                android:inputType="textMultiLine"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:drawableTint="#EC407A" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="270dp"
+                android:id="@+id/addreview"
+                android:layout_weight="1"
+                android:layout_marginTop="-50dp"
+                android:text="Add"
+                android:background="#F06292"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+           android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+

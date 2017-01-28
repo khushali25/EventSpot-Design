@@ -1,0 +1,67 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vendorpack.Frag_VendorProfile"
+    android:scrollbars="vertical"
+    android:background="@drawable/tri">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vendor_updateprofile"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:text="Update Profile"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="300dp"
+            android:textSize="17dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vendor_logout"
+           android:clickable="true"
+            android:linksClickable="true"
+            android:text="Logout"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="300dp"
+            android:textSize="17dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vendor_changepass"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:text="Change Password"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="17dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view_vendorprofile"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scrollbars="vertical"
+            />
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>
+
+

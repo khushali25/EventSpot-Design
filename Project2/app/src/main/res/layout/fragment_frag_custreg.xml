@@ -1,0 +1,248 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="customerpack.Frag_custreg"
+    android:background="@drawable/tri">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv1"
+                android:padding="2dp"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tname"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/name4"
+                    android:drawableTint="#EC407A"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/temailid1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tname1"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temailid"
+                    android:hint="Email Id"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/email2"
+                    android:drawableTint="#EC407A"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tpass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temailid1"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tpass"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/key1"
+                    android:drawableTint="#EC407A"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/trepass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temailid1"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trepass"
+                    android:hint="Re-Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/key1"
+                    android:drawableTint="#EC407A"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tprofilepic"
+                    android:hint="Add Profile Picture"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/profilepic"
+                    android:drawableTint="#EC407A"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/customerimage"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-50dp"
+                android:background="#F48FB1"
+                android:text="Add"/>
+
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tmobile1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tpass1"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tmobile"
+                    android:hint="Mobile No"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/smartphone1"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tgender1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tmobile1"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/tgender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gender"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/gender"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tgender1"
+
+                android:padding="2dp">
+                <EditText
+                    android:id="@+id/taddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/address"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tdob1"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tAddress1"
+                android:padding="2dp">
+                <EditText
+                    android:id="@+id/tdob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date Of Birth"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/date1"/>
+
+                <Button
+                    android:layout_height="35dp"
+                  android:layout_marginLeft="210dp"
+                    android:id="@+id/btndate"
+                    android:layout_marginTop="-50dp"
+                    android:layout_width="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cal3"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/bSignUp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Sign Up"
+                android:textColor="#fff"
+                android:background="#EC407A"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>

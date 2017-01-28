@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_book_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nikki.project2.customerpack.BookEvent"
+    android:background="@drawable/tri"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#F06292"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Book Your Event"
+                android:textSize="20dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/eventname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Event Name"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/servicetype" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/eventdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="EventDate"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/date1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="250dp"
+                android:id="@+id/btneventdate"
+                android:layout_weight="1"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/cal3"/>
+
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/android_material_design_spinner_eventbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Venue Type"
+                app:met_floatingLabel="normal"
+                android:drawableLeft="@drawable/timeslot12"
+                android:drawableTint="#EC407A"
+                android:layout_marginTop="20dp"/>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/eventcapacity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Number of Person"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/avatar" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/makepayment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="#EC407A"
+                android:text="Make Payment"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

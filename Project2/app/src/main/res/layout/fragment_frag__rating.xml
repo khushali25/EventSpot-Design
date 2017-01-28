@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="customerpack.Frag_Rating"
+    android:background="@drawable/tri"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/rate_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give your Rating"
+        android:textSize="18dp"/>
+
+    <RatingBar
+        android:layout_below="@+id/cust_rating"
+        android:id="@+id/user_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/addrating"
+        android:text="Add"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="-60dp"
+        android:background="#F06292"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginTop="20dp" />
+
+
+
+</LinearLayout>

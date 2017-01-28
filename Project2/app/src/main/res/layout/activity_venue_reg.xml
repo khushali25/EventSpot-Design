@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_venue_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nikki.project2.VenueReg"
+    android:background="@drawable/tri">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/android_material_design_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Venue Type"
+                app:met_floatingLabel="normal"
+                android:drawableLeft="@drawable/servicetype"
+                android:drawableTint="#EC407A"                 />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/venuename"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Venue Name"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/name4" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/venueprofilepic"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Add Venue Profile Picture"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/profilepic" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/venueimage"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-40dp"
+                android:background="#F48FB1"
+                android:text="Add"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/vaddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Venue Address"
+                    android:inputType="textMultiLine"
+                    android:drawableLeft="@drawable/address" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/venuecapacity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Venue Capacity"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/avatar"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Venue Area"
+                app:met_floatingLabel="normal"
+                android:layout_marginTop= "10dp"
+                android:drawableLeft="@drawable/area"
+                android:drawableTint="#EC407A"
+                />
+
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Venue City"
+                app:met_floatingLabel="normal"
+                android:layout_marginTop= "10dp"
+                android:drawableLeft="@drawable/city"
+                android:drawableTint="#EC407A"/>
+
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Venue State"
+                app:met_floatingLabel="normal"
+                android:layout_marginTop= "10dp"
+                android:drawableTint="#EC407A"
+               android:drawableLeft="@drawable/state" />
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/vwebsite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Venue Web site"
+                    android:inputType="textWebEmailAddress"
+                    android:drawableLeft="@drawable/website"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/venuecontactno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Venue Contact No"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/telephone"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/venuefacility"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Add Venue Facility"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/facility" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-40dp"
+                android:text="Add"
+                android:background="#F48FB1"
+                android:id="@+id/btnfacility"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/venuetimeslot"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Add Venue Time Slot"
+                    android:inputType="text"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/timeslot12"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-40dp"
+                android:text="Add"
+                android:background="#F48FB1"
+                android:id="@+id/btntimeslot"/>
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/venueprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Event Amount"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/price"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/bookingamount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="Booking Amount"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/rupee"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/venuegallery1"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:drawableTint="#EC407A"
+                android:singleLine="true"
+                android:hint="Add Venue Images"
+                android:inputType="textMultiLine"
+                android:drawableLeft="@drawable/gallery"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-40dp"
+                android:text="Add"
+                android:background="#F48FB1"
+               android:id="@+id/btnvenuegallery" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/venuevideo"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#EC407A"
+                    android:singleLine="true"
+                    android:hint="Add Venue Video"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/video" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-40dp"
+                android:text="Add"
+                android:background="#F48FB1"
+               android:id="@+id/btnvenuevideo" />
+
+
+            <Button
+                android:id="@+id/makepayment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="#EC407A"
+                android:text="Make Payment"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

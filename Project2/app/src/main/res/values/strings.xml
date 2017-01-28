@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">EventSpot Booking</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_custnavigation">Custnavigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="object_array">
+
+        <item>House</item>
+
+        <item>Car</item>
+
+        <item>Cake</item>
+
+        <item>Money</item>
+
+        <item>Food</item>
+
+        <item>Phone</item>
+
+        <item>Laptop</item>
+
+    </string-array>
+    <string name="title_activity_custnavigation2">custnavigation2</string>
+
+</resources>

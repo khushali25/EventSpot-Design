@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        card_view:cardBackgroundColor="#F8BBD0"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardElevation="-2dp"
+        card_view:cardUseCompatPadding="true">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/linear2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linear3"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:id="@+id/txtCustomerProfileName"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Name"
+                    android:padding="4dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="-10dp" />
+
+                <TextView
+                    android:id="@+id/txtCustomerProfileEmailid"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Email id"
+                    android:layout_marginLeft="-10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:inputType="textEmailAddress"/>
+
+                <TextView
+                    android:id="@+id/txtCustomerProfilePassword"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Password"
+                    android:layout_marginLeft="-10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/txtCustomerVendorMobileNo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:text="Mobile No"
+                    android:padding="4dp"
+                    android:layout_marginLeft="-10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/txtCustomerProfileGender"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:text="Gender"
+                    android:layout_marginLeft="-10dp"
+                    android:padding="4dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/txtCustomerProfileDOB"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Date Of Birth"
+                    android:layout_marginLeft="-10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                <TextView
+                    android:id="@+id/txtCustomerProfileAddress"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Address"
+                    android:layout_marginLeft="-10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="265dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:id="@+id/linear4"
+                android:layout_marginLeft="-20dp">
+
+                <TextView
+                    android:id="@+id/CustomerProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="4dp"
+                    android:text="Booking Amount"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView
+                    android:id="@+id/CustomerProfileEmailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Booking Amount"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView
+                    android:id="@+id/CustomerProfilePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Booking Amount"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView
+                    android:id="@+id/CustomerProfileMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Booking Amount"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView
+                    android:id="@+id/CustomerProfileGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Booking Amount"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/CustomerProfileDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Booking Amount"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView
+                    android:id="@+id/CustomerProfileAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="0dp"
+                    android:padding="4dp"
+                    android:text="Booking Amount"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

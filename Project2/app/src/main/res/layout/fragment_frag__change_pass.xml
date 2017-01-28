@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nikki.project2.Frag_ChangePass"
+    android:background="@drawable/tri">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/emaillayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="2dp"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emailid1"
+            android:hint="Enter your Email id"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/user"
+            android:drawableTint="#F48FB1"
+            android:layout_below="@+id/emaillayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp" />
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passlayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:padding="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/emaillayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tpass"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/lock"
+            android:drawableTint="#F48FB1"
+            android:layout_below="@+id/emaillayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/newpasslayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/passlayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tpass1"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/lock"
+            android:drawableTint="#F48FB1"
+            android:layout_marginTop="48dp"
+            android:layout_alignTop="@+id/newpasslayout"
+            android:layout_centerHorizontal="true" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/ChangePass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#EC407A"
+        android:text="Change Password"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+      android:layout_marginTop="22dp"
+        android:layout_below="@+id/newpasslayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginEnd="80dp" />
+
+
+</RelativeLayout>

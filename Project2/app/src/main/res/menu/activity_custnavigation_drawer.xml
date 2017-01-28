@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/profile15"
+                android:title="My Profile" />
+
+        </menu>
+    </item>
+
+    <item android:title="Services">
+        <menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/cutlery1"
+            android:title="Catering"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ballerina"
+            android:title="Choreography"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/tree"
+            android:title="Decoration"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/picture"
+            android:title="Photography"/>
+    </group>
+            </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Tell a Friend" />
+
+        </menu>
+    </item>
+
+</menu>

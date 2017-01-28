@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_owner_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nikki.project2.EditOwnerProfile"
+    android:background="@drawable/tri">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv1"
+                android:padding="2dp"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_ownerprofilename"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/name4"
+                    android:drawableTint="#EC407A"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtemailid1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtname1"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_ownerprofileemailid"
+                    android:hint="Email Id"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/email2"
+                    android:drawableTint="#EC407A"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtmobile1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpass1"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_ownerprofilemobileno"
+                    android:hint="Mobile No"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/smartphone1"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtgender1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtmobile1"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/edit_ownerprofilegender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gender"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/gender"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtgender1"
+
+                android:padding="2dp">
+                <EditText
+                    android:id="@+id/edit_ownerprofileaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableTint="#EC407A"
+                    android:drawableLeft="@drawable/address"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tdob1"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tAddress1"
+                android:padding="2dp">
+                <EditText
+                    android:id="@+id/edit_ownerprofiledob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date Of Birth"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/date1"
+                    android:drawableTint="#EC407A"/>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="250dp"
+                    android:id="@+id/btn_editownercalender"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-50dp"
+                    android:background="@drawable/cal3"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_edit_ownerprofileUpdate"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Update"
+                android:textColor="#fff"
+                android:background="#EC407A"
+                android:layout_gravity="center"
+                android:layout_width="match_parent" />
+
+            `
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
